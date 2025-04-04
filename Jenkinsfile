@@ -1,23 +1,19 @@
 pipeline {
     agent any
-
     stages {
-        stage('Build') {
+        stage('one') {
             steps {
-                echo 'Building...'
-                sleep 1
+                echo 'Hi, welcome to pipeline demo....'
+             }
+        }
+        stage('Two') {
+            steps {
+                echo 'Sample testing of stage 2'
             }
         }
-        stage('Test') {
+        stage('Three') {
             steps {
-                echo 'Testing...'
-                sleep 1
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying...'
-                sleep 1
+                echo 'Thanks for using Jenkins Pipeline'
             }
         }
     }
